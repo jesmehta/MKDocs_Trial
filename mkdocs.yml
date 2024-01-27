@@ -2,3 +2,12 @@ site_name: This Here My Site
 nav:
   - Home: index.md
   - About Me: about.md
+  
+theme:
+    name: readthedocs
+
+markdown_extensions:
+  - attr_list
+
+plugins:
+  - mkdocs-video
