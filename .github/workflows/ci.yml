@@ -21,10 +21,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install mkdocs
-
-    - name: Build and deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        deploy_branch: gh-pages  # The target branch to deploy
-        build_dir: site          # The directory of the built HTML files
+  
+   - name: Deploy MkDocs
+     uses: mhausenblas/mkdocs-deploy-gh-pages@1.26
+ 
